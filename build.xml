@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<project name="Services_Geocoding" basedir="." default="docs">
+<!--
+  <target name="test">
+    <phpunit haltonfailure="true" printsummary="true">
+      <batchtest>
+        <fileset dir="./tests/">
+          <include name="*Test.php"/>
+        </fileset>
+      </batchtest>
+    </phpunit>
+  </target>
+-->
+  <target name="docs">
+    <phpdoc title="Documentation"
+      destdir="api"
+      output="HTML:frames:default">
+   <fileset dir="./" >
+      <include name="**/*.php" />
+   </fileset>
+   <projdocfileset dir="." >
+      <!--
+      <include name="README">
+      <include name="INSTALL">
+      <include name="CHANGELOG">
+      -->
+   </projdocfileset>
+   </phpdoc>
+   </target>
+
+
+</project>
